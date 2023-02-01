@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-image: url('/public/assets/imgs/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+}
+
+.reminderApp {
+  width: 300px;
+  margin: auto;
+}
+
+.app .newReminder {
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  margin: auto;
+  background-color: rgba(50, 3, 3, 0.67);
+  text-align: center;
+  box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.app .newReminder img {
+  width: 170px;
+  margin: 20px 0;
+}
+
+.app .newReminder form {
+  margin-top: 15px;
+}
+
+.app .newReminder form input {
+  width: 100%;
+  background-color: rgba(254, 162, 2, 0.6);
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #464000;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.app .newReminder form input::placeholder {
+  color: #bbb;
+  font-size: 15px;
+}
+
+.app .newReminder form .add {
+  width: 100%;
+  background-color: #0030ab;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.app .remindersList {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.app .remindersList .reminder {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  padding-right: 50px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background-color: rgba(3, 16, 50, 0.67);
+  box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.25);
+  transition: all .5s ease-in-out;
+}
+
+.app .remindersList .reminder:nth-of-type(even) {
+  background-color: rgba(137, 99, 5, 0.67);
+}
+
+.app .remindersList .reminder h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.app .remindersList .reminder p {
+  font-size: 16px;
+  color: #fff;
+  margin: 15px 0 0 0;
+}
+
+.app .remindersList .delete {
+  position: absolute;
+  top: calc(50% - 15px);
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: #eee;
+}
+
+.app .clear {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #eee;
+  font-style: italic;
+}
